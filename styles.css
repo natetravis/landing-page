@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #161b40;
+    color: white;
+}
+
+/* Header Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #efa500;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1;
+    background: url('image.png') no-repeat center/cover;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.left-section .overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: #efa500;
+    max-width: 60%;
+}
+
+.left-section .overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.left-section .overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.right-section {
+    flex: 1;
+    background: linear-gradient(180deg, #162030, #161b40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.right-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.right-section h1 span {
+    color: #efa500;
+}
+
+.right-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #efa500;
+    color: white;
+}
+
+.btn-secondary {
+    border: 2px solid #efa500;
+    color: #efa500;
+}
+
+.btn-primary:hover {
+    background-color: #f4b350;
+}
+
+.btn-secondary:hover {
+    background-color: #efa500;
+    color: white;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social-icons a:hover {
+    color: #efa500;
+}
